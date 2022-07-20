@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Calculator</title>
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+     <!-- Stylesheet -->
+     <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+   
+</style>
+
+<body>
+     <div class="calculator">
+          <div class="display">
+               <input type="text" placeholder="0" id="inputDisplay" name="inputDisplay" disabled />
+          </div>
+          <div class="buttons">
+               <!-- Full Erase -->
+               <input type="button" value="AC" name="bac" id="clear" onclick="reset()" />
+               <!-- Erase Single Value -->
+               <input type="button" value="|x|"" name="abs" id="abs" onclick="mathCalc('abs')" />
+               <input type="button" value="/" name="bda" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="*" name="bs" class="input-button" onclick="addToCalculator(event)" />
+
+               <input type="button" value="7" name="b7" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="8" name="b8" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="9" name="b9" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="-" name="bdash" class="input-button" onclick="addToCalculator(event)" />
+
+               <input type="button" value="6" name="b6" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="5" name="ba5" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="4" name="b4" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="+" name="bp" class="input-button" onclick="addToCalculator(event)" />
+
+               <input type="button" value="1" name="b1" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="2" name="b2" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="3" name="b3" class="input-button" onclick="addToCalculator(event)" />
+
+               <input type="button" value="=" name="bsq" id="equal" onclick="finallize()" />
+               <input type="button" value="0" name="b0" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="." name="bd" class="input-button" onclick="addToCalculator(event)" />
+               <input type="button" value="&#8730;" name="bsq" class="input-button" onclick="mathCalc('sqrt')" />
+               <input type="button" value="r" name="Round" class="input-button" onclick="mathCalc('round')" />
+               <input type="button" value="ce" name="ceil" class="input-button" onclick="mathCalc('ceil')" />
+               <input type="button" value="fl" name="floor" class="input-button" onclick="mathCalc('floor')" />
+               <input type="button" value="^" name="power" class="input-button" onclick="mathCalc('pow')" />
+
+               <h3>Make By Amir poya</h3>
+          </div>
+     </div>
+     <!-- Script -->
+     <script src="script.js"></script>
+</body>
+
+</html>
